@@ -13,6 +13,7 @@ const Categorias = (props) => {
 				<div className='row'>
 					<div className='col-lg-4'>
 						<ul>
+							abre como se fosse uma nova pagina
 							{props.categorias.map( cat => {
 								return (
 										<li><Link to={`/categorias/${cat.url}`}>{cat.categoria}</Link></li>
@@ -21,6 +22,7 @@ const Categorias = (props) => {
 						</ul>
 					</div>
 					<div className='col-lg-8'>
+						component categoria não renderiza
 						<Route path='/categorias/:urlCategoria' component={Categoria}/>
 					</div>
 				</div>
